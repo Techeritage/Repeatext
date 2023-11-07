@@ -44,7 +44,7 @@
       </div>
       <div class="ads-grid2">
         <div class="abc">
-          <div class="small-screen-ad a ad-container">
+          <div class="small-screen-ad a" id="ad1">
             
           </div>
           <div class="large-screen-ad a" id="ad-cont">
@@ -98,7 +98,7 @@
       </div>
       
       <div class="btwads">
-        <div class="btwads-cont ad-container">
+        <div class="btwads-cont" id="ad2">
 
         </div>
       </div>
@@ -117,7 +117,7 @@
 
     <div class="ads-case">
       <div class="def">
-        <div class="small-screen-ad2 ads ad-container">
+        <div class="small-screen-ad2 ads" id="ad3">
           
         </div>
         <div class="large-screen-ad2 ads">
@@ -190,17 +190,61 @@
     };
 
     // Get references to all ad container divs with a common class
-    var adContainers = document.querySelectorAll('.ad-container');
+    var adContainer1 = document.getElementById('ad1');
 
     // Loop through the ad containers and insert the ad code into each one
-    adContainers.forEach(function(adContainer, index) {
+   if (adContainer1) {
         var adScript = document.createElement('script');
         adScript.type = 'text/javascript';
         adScript.src = "//www.highcpmcreativeformat.com/7109d671185c64c93e83788f70f8c70b/invoke.js";
 
         // Append the ad script to the current ad container
-        adContainer.appendChild(adScript);
-    });
+        adContainer1.appendChild(adScript);
+    }
+</script>
+  <script type="text/javascript">
+    atOptions = {
+        'key': '7109d671185c64c93e83788f70f8c70b',
+        'format': 'iframe',
+        'height': 50,
+        'width': 320,
+        'params': {}
+    };
+
+    // Get references to all ad container divs with a common class
+    var adContainer2 = document.getElementById('ad2');
+
+    // Loop through the ad containers and insert the ad code into each one
+   if (adContainer2) {
+        var adScript = document.createElement('script');
+        adScript.type = 'text/javascript';
+        adScript.src = "//www.highcpmcreativeformat.com/7109d671185c64c93e83788f70f8c70b/invoke.js";
+
+        // Append the ad script to the current ad container
+        adContainer2.appendChild(adScript);
+    }
+</script>
+  <script type="text/javascript">
+    atOptions = {
+        'key': '7109d671185c64c93e83788f70f8c70b',
+        'format': 'iframe',
+        'height': 50,
+        'width': 320,
+        'params': {}
+    };
+
+    // Get references to all ad container divs with a common class
+    var adContainer3 = document.getElementById('ad3');
+
+    // Loop through the ad containers and insert the ad code into each one
+   if (adContainer3) {
+        var adScript = document.createElement('script');
+        adScript.type = 'text/javascript';
+        adScript.src = "//www.highcpmcreativeformat.com/7109d671185c64c93e83788f70f8c70b/invoke.js";
+
+        // Append the ad script to the current ad container
+        adContainer3.appendChild(adScript);
+    }
 </script>
     <script type="text/javascript">
     atOptions = {
@@ -212,7 +256,7 @@
     };
 
     // Get a reference to the ad container div
-    var adContainer = document.getElementById('ad-container');
+    var adContainer = document.getElementById('ad-cont');
 
     // Check if the container exists before inserting the ad code
     if (adContainer) {
