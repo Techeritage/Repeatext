@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baskervville&family=Lato&family=Playfair+Display&family=Raleway:wght@500&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="text.css">
+  <link rel="shortcut icon" href="favi.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="query.css">
+  <title>Repeatext - Free Text Repeater and Generator Tool</title>
+</head>
+<body>
+  <header>
+    <div class="h1"><img src="logo1.png" alt="logo"></div>
+  </header>
+  
+  <div id="alertBox1">
+    <div class="icon"><ion-icon name="alert-circle"></ion-icon></div>
+    <div class="alertText">Input box is empty.</div> 
+  </div>
+  
+  <div id="alertBox2">
+    <div class="icon"><ion-icon name="alert-circle"></ion-icon></div>
+    <div class="alertText">Repetition is not provided.</div> 
+  </div>
+  <div id="alertBox3">
+    <div class="icon"><ion-icon name="alert-circle"></ion-icon></div>
+    <div class="alertText">Output box is empty</div> 
+  </div>
+
+  <div id="alertBox4">
+    <div class="icon4"><ion-icon name="checkmark-circle"></ion-icon></div>
+    <div class="alertText">Copied to clipboard</div> 
+  </div>
+
+  <section>
+    <div class="ads-grid">
+      <div class="ads-grid1">
+        <h1>Repeatext</h1>
+        <p>Unleash the Power of Repetion: Amplify Your Text, Link & Emoji with Ease!</p>
+      </div>
+      <div class="ads-grid2">
+        <div class="abc">
+          <div class="small-screen-ad a">
+            
+          </div>
+          <div class="large-screen-ad a">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="myGrid">
+      
+      <div class="inpbox">
+        <div class="inp">
+          <div class="txt">
+            <p>Text for Repetition</p>
+            <button id="clearInput" onclick="clearInput()">Clear Input</button>
+          </div>
+      
+          <div  class="txt-input">
+            <textarea id="txtInput" oninput="updateLength()" rows="5" placeholder="Input your text for repetition..."></textarea>
+          </div>
+      
+          <div class="wordchar">
+            Words: <span id="word">0</span> Characters: <span id="char">0</span>
+          </div>
+      
+          <div class="set-grid">
+            <div class="set">
+              <p>Text Formatting Options:</p>
+              <div class="check">
+                <input type="checkbox" name="period" id="period">
+                <label for="period">Insert period</label>
+              </div>
+              <div class="check">
+                <input type="checkbox" name="space" id="space">
+                <label for="space">Insert space</label>
+              </div>
+              <div class="check">
+                <input type="checkbox" name="newline" id="newline">
+                <label for="newline">Insert newline</label>
+              </div>
+            </div>
+      
+            <div class="rep">
+              <p>Repetiton Times:</p>
+              <input type="number" id="rep" placeholder="Repetions">
+              <button id="repBtn">Repeat Text</button>
+            </div> 
+          </div>
+        </div>
+      </div>
+      
+      <div class="btwads">
+        <div class="btwads-cont">
+
+        </div>
+      </div>
+      
+      
+      <div class="outbx" id="targetSection">
+        <div class="out">
+          <p for="output">Output</p>
+          <div class="'txt-output">
+            <textarea name="Output" id="outPut" rows="12" placeholder="Your repeated text will appear here." readonly></textarea>
+          </div>
+          <div><button id="copyButton">Copy Text</button></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ads-case">
+      <div class="def">
+        <div class="small-screen-ad2 ads">
+          
+        </div>
+        <div class="large-screen-ad2 ads">
+
+        </div>
+      </div>
+    </div>
+    <div class="site-info-case">
+      <div class="site-info">
+        <h2>What is Repeatext?</h2>
+        <p class="p1">Repeatext is a simple web app and a Test Multiplier Tool, as it enables you to ceaselessly replicate whatever
+          text, emoji, or punctuation you want.
+        </p>
+      </div>
+      <div class="site-info">
+        <h2>How does Repeatext Work?</h2>
+        <div class="ul">
+          <ul>
+            <li>Enter your text into the input box.</li>
+            <li>Choose from the Text Formatting Options to modify your text.</li>
+            <li>Type in how many times you would like it repeated.</li>
+            <li>Then, click "Repeat Text" to repeat your text.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-info">
+        <h2>Why use Repeatext?</h2>
+        <p class="p1">Repeatext is a text multiplexer tool, in other word you can multiply the number of your text with it.
+          This tool is also very useful for performing cross browser testing.
+        </p>
+      </div>
+      <div class="site-info">
+        <h2>What else can Repeatext do? </h2>
+        <p class="p1">
+          With this tool, you can easily track the number of words and characters in your text. This tool saves time and is also free.
+        </p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer1">
+      <div class="footer1-info">
+        <div class="foot-logo">
+          <img src="footer.png" alt="logo">
+        </div>
+        <p> Simply input text, repeat, copy and share! No fee and no need to create an account.</p>
+        <div class="links">
+          <a href="index.html">Home</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="about.html"> About us</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer2">
+     <div class="footer2-info">
+      <p><span>&#169 2023</span> Repeatext.com</p>
+     </div> 
+    </div>
+  </footer>
+ 
+
+
+
+  <script src="text.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
