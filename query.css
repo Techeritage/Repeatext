@@ -76,6 +76,10 @@
     height: 50px;
   }
 
+  #ad1 {
+     width: 300px;
+    height: 250px;
+  }
   .ads-case {
     display: flex;
     align-items: center;
