@@ -44,10 +44,10 @@
       </div>
       <div class="ads-grid2">
         <div class="abc">
-          <div class="small-screen-ad a">
+          <div class="small-screen-ad a ad-container">
             
           </div>
-          <div class="large-screen-ad a">
+          <div class="large-screen-ad a" id="ad-cont">
             
           </div>
         </div>
@@ -98,7 +98,7 @@
       </div>
       
       <div class="btwads">
-        <div class="btwads-cont">
+        <div class="btwads-cont ad-container">
 
         </div>
       </div>
@@ -117,7 +117,7 @@
 
     <div class="ads-case">
       <div class="def">
-        <div class="small-screen-ad2 ads">
+        <div class="small-screen-ad2 ads ad-container">
           
         </div>
         <div class="large-screen-ad2 ads">
@@ -180,7 +180,50 @@
  
 
 
+  <script type="text/javascript">
+    atOptions = {
+        'key': '7109d671185c64c93e83788f70f8c70b',
+        'format': 'iframe',
+        'height': 50,
+        'width': 320,
+        'params': {}
+    };
 
+    // Get references to all ad container divs with a common class
+    var adContainers = document.querySelectorAll('.ad-container');
+
+    // Loop through the ad containers and insert the ad code into each one
+    adContainers.forEach(function(adContainer, index) {
+        var adScript = document.createElement('script');
+        adScript.type = 'text/javascript';
+        adScript.src = "//www.highcpmcreativeformat.com/7109d671185c64c93e83788f70f8c70b/invoke.js";
+
+        // Append the ad script to the current ad container
+        adContainer.appendChild(adScript);
+    });
+</script>
+    <script type="text/javascript">
+    atOptions = {
+        'key': '37b02156c3f1d105d9b074ac22894106',
+        'format': 'iframe',
+        'height': 250,
+        'width': 300,
+        'params': {}
+    };
+
+    // Get a reference to the ad container div
+    var adContainer = document.getElementById('ad-container');
+
+    // Check if the container exists before inserting the ad code
+    if (adContainer) {
+        var adScript = document.createElement('script');
+        adScript.type = 'text/javascript';
+        adScript.src = "//www.highcpmcreativeformat.com/37b02156c3f1d105d9b074ac22894106/invoke.js";
+
+        // Append the ad script to the ad container
+        adContainer.appendChild(adScript);
+    }
+</script>
   <script src="text.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
