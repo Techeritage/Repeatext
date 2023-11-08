@@ -14,39 +14,6 @@ const alertBox2 = document.getElementById("alertBox2");
 const alertBox3 = document.getElementById("alertBox3");
 const alertBox4 = document.getElementById("alertBox4");
 
-//display ads based on media query
-const div = document.querySelector('.abc');
-const div2 = document.querySelector('.def');
-const smallScreenAd = document.querySelector('.small-screen-ad');
-const smallScreenAd2 = document.querySelector('.small-screen-ad2');
-const largeScreenAd = document.querySelector('.large-screen-ad');
-const largeScreenAd2 = document.querySelector('.large-screen-ad2');
-
-
-function handleMediaQuery(event) {
-  if (event.matches) {
-    //small screen
-    div.innerHTML = '';
-    div.appendChild(smallScreenAd);
-    div2.innerHTML = '';
-    div2.appendChild(smallScreenAd2);
-  }
-  else {
-    div.innerHTML = '';
-    div.appendChild(largeScreenAd);
-    div2.innerHTML = '';
-    div2.appendChild(largeScreenAd2);
-  }
-}
-
-//define media query listener
-const smallScreenQuery = window.matchMedia('(max-width: 600px)');
-
-smallScreenQuery.addListener(handleMediaQuery);
-
-//initial check on the media query
-handleMediaQuery(smallScreenQuery);
-
 //Clear button
 function clearInput() {
   word.textContent = "0";
