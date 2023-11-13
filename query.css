@@ -72,6 +72,7 @@
   }
   
   .a {
+    width: 320px;
     height: 30px;
   }
 
@@ -83,6 +84,7 @@
   }
   
   .ads {
+    width: 320px;
     height: 30px;
     
   }
@@ -95,6 +97,7 @@
   }
 
   .btwads-cont {
+    width: 320px; 
     height: 20px;
   }
 
