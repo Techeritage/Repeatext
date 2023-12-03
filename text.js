@@ -21,6 +21,17 @@ function clearInput() {
   textInput.value = "";
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+      document.getElementById("catchyAlert").classList.remove("hidden");
+
+      setTimeout(() => {
+        document.getElementById("catchyAlert").classList.add("hidden");
+      }, 20000);
+
+    }, 10000);
+   });
+
 //numbers of character and word
 function updateLength() {
   var length = textInput.value.length;
