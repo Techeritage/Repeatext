@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById("catchyAlert").classList.add("hidden");
       }, 20000);
 
-    }, 10000);
+    }, 6000);
    });
 
 //numbers of character and word
