@@ -22,7 +22,8 @@ p, div {
 }
 
 #catchyAlert {
-      background: white;
+     background-color: white;
+      z-index: 10;
       position: fixed;
       display: flex;
       justify-content: center;
